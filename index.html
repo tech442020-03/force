@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force Recruitment Guidance | CAPF & Police Aspirants</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0b3d91 0%, #1e40af 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #fbbf24;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header class="hero-gradient text-white pt-12 pb-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="flex justify-center mb-6">
+                <i data-lucide="shield-check" class="w-20 h-20 text-yellow-400 drop-shadow-lg"></i>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">Force Recruitment Guidance</h1>
+            <p class="text-xl md:text-2xl text-blue-100 opacity-90 italic max-w-3xl mx-auto">
+                "Desh Seva Sabse Pehle" — Empowering CAPF & Police Aspirants
+            </p>
+        </div>
+    </header>
+
+    <!-- Desktop Optimized Navigation -->
+    <nav class="sticky-nav bg-white/95 backdrop-blur shadow-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex overflow-x-auto items-center py-4 justify-between md:justify-center md:space-x-12 no-scrollbar">
+                <a href="#notifications" class="nav-link font-bold text-slate-700 hover:text-blue-700 flex items-center gap-2 transition-colors">
+                    <i data-lucide="bell" class="w-5 h-5"></i> Updates
+                </a>
+                <a href="#forces-links" class="nav-link font-bold text-slate-700 hover:text-blue-700 flex items-center gap-2 transition-colors">
+                    <i data-lucide="link" class="w-5 h-5"></i> Official Links
+                </a>
+                <a href="#eligibility" class="nav-link font-bold text-slate-700 hover:text-blue-700 flex items-center gap-2 transition-colors">
+                    <i data-lucide="user-check" class="w-5 h-5"></i> Eligibility
+                </a>
+                <a href="#physical" class="nav-link font-bold text-slate-700 hover:text-blue-700 flex items-center gap-2 transition-colors">
+                    <i data-lucide="activity" class="w-5 h-5"></i> Physical
+                </a>
+                <a href="#preparation" class="nav-link font-bold text-slate-700 hover:text-blue-700 flex items-center gap-2 transition-colors">
+                    <i data-lucide="book-open" class="w-5 h-5"></i> Preparation
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-16 space-y-24">
+
+        <!-- Latest Notifications -->
+        <section id="notifications">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="bg-blue-100 p-3 rounded-full">
+                    <i data-lucide="megaphone" class="text-blue-700 w-8 h-8"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-black text-slate-800">Latest Notifications</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                    <span class="bg-red-100 text-red-700 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">New</span>
+                    <h3 class="text-2xl font-bold mt-4">SSC GD Constable</h3>
+                    <p class="text-slate-600 mt-3">Central Armed Police Forces (CAPF) recruitment via Staff Selection Commission.</p>
+                    <a href="https://ssc.gov.in" target="_blank" class="inline-flex items-center mt-6 text-blue-700 font-bold hover:gap-2 transition-all">
+                        SSC Portal <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                    <span class="bg-blue-100 text-blue-700 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Active</span>
+                    <h3 class="text-2xl font-bold mt-4">UPSC CAPF (AC)</h3>
+                    <p class="text-slate-600 mt-3">Official portal for Assistant Commandant (Group A) recruitment entries.</p>
+                    <a href="https://upsc.gov.in" target="_blank" class="inline-flex items-center mt-6 text-blue-700 font-bold hover:gap-2 transition-all">
+                        UPSC Portal <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                    <span class="bg-green-100 text-green-700 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">State Police</span>
+                    <h3 class="text-2xl font-bold mt-4">Police Recruitment</h3>
+                    <p class="text-slate-600 mt-3">Direct links to State-wise Police selection boards for SI and Constables.</p>
+                    <a href="#state-police" class="inline-flex items-center mt-6 text-blue-700 font-bold hover:gap-2 transition-all">
+                        See All Links <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forces Direct Links Section -->
+        <section id="forces-links">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="bg-blue-100 p-3 rounded-full">
+                    <i data-lucide="external-link" class="text-blue-700 w-8 h-8"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-black text-slate-800">Official Central Portals</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="https://rectt.bsf.gov.in/" target="_blank" class="flex flex-col items-center p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-blue-500 hover:shadow-xl transition-all group">
+                    <span class="text-xl font-black group-hover:text-blue-700 text-slate-800">BSF</span>
+                    <span class="text-sm text-slate-500 text-center">Border Security Force</span>
+                </a>
+                <a href="https://rect.crpf.gov.in/" target="_blank" class="flex flex-col items-center p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-blue-500 hover:shadow-xl transition-all group">
+                    <span class="text-xl font-black group-hover:text-blue-700 text-slate-800">CRPF</span>
+                    <span class="text-sm text-slate-500 text-center">Central Reserve Police</span>
+                </a>
+                <a href="https://cisfrectt.cisf.gov.in/" target="_blank" class="flex flex-col items-center p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-blue-500 hover:shadow-xl transition-all group">
+                    <span class="text-xl font-black group-hover:text-blue-700 text-slate-800">CISF</span>
+                    <span class="text-sm text-slate-500 text-center">Ind. Security Force</span>
+                </a>
+                <a href="https://recruitment.itbpolice.nic.in/" target="_blank" class="flex flex-col items-center p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-blue-500 hover:shadow-xl transition-all group">
+                    <span class="text-xl font-black group-hover:text-blue-700 text-slate-800">ITBP</span>
+                    <span class="text-sm text-slate-500 text-center">Indo-Tibetan Border</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- State Police Recruitment Section -->
+        <section id="state-police">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="bg-amber-100 p-3 rounded-full">
+                    <i data-lucide="map-pinned" class="text-amber-700 w-8 h-8"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-black text-slate-800">State Police Portals</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="https://uppbpb.gov.in/" target="_blank" class="flex flex-col items-center p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all group">
+                    <span class="text-xl font-black group-hover:text-amber-700 text-slate-800 text-center">UP Police</span>
+                    <span class="text-sm text-slate-500 text-center">Uttar Pradesh</span>
+                </a>
+                <a href="https://www.mahapolice.gov.in/" target="_blank" class="flex flex-col items-center p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all group">
+                    <span class="text-xl font-black group-hover:text-amber-700 text-slate-800 text-center">Maharashtra</span>
+                    <span class="text-sm text-slate-500 text-center">Police Recruit</span>
+                </a>
+                <a href="https://csbc.bih.nic.in/" target="_blank" class="flex flex-col items-center p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all group">
+                    <span class="text-xl font-black group-hover:text-amber-700 text-slate-800 text-center">Bihar Police</span>
+                    <span class="text-sm text-slate-500 text-center">CSBC / BPSSC</span>
+                </a>
+                <a href="https://punjabpolice.gov.in/" target="_blank" class="flex flex-col items-center p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all group">
+                    <span class="text-xl font-black group-hover:text-amber-700 text-slate-800 text-center">Punjab Police</span>
+                    <span class="text-sm text-slate-500 text-center">State Recruitment</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Eligibility Section -->
+        <section id="eligibility" class="bg-white p-10 md:p-16 rounded-[2.5rem] shadow-xl border border-slate-100">
+            <h2 class="text-3xl md:text-4xl font-black mb-12 text-center text-slate-800">Eligibility Criteria</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="bg-blue-600 p-4 rounded-2xl h-fit shadow-lg shadow-blue-200">
+                            <i data-lucide="calendar" class="text-white w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Age Limit</h4>
+                            <p class="text-slate-600 leading-relaxed">General: 18–23/25 years (Constable). Up to 35 for specific officer ranks. Relaxations: OBC (3y), SC/ST (5y).</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="bg-blue-600 p-4 rounded-2xl h-fit shadow-lg shadow-blue-200">
+                            <i data-lucide="graduation-cap" class="text-white w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Education</h4>
+                            <p class="text-slate-600 leading-relaxed">10th/12th for Constable. Degree for Sub-Inspector and Assistant Commandant roles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="bg-blue-600 p-4 rounded-2xl h-fit shadow-lg shadow-blue-200">
+                            <i data-lucide="flag" class="text-white w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Citizenship</h4>
+                            <p class="text-slate-600 leading-relaxed">Must be a citizen of India. Specific Nepal/Bhutan provisions apply for certain CAPF posts.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="bg-blue-600 p-4 rounded-2xl h-fit shadow-lg shadow-blue-200">
+                            <i data-lucide="file-text" class="text-white w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Documents</h4>
+                            <p class="text-slate-600 leading-relaxed">Keep Aadhar, Domicile, Caste certificate, and all marksheets ready for verification rounds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Physical Standards -->
+        <section id="physical">
+            <h2 class="text-3xl md:text-4xl font-black mb-10 flex items-center gap-4 text-slate-800">
+                <i data-lucide="dumbbell" class="text-blue-700 w-10 h-10"></i> Physical Standards (PET)
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-blue-700 text-white p-8 rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                    <h4 class="font-bold text-blue-200 uppercase text-xs tracking-[0.2em] mb-2">Height</h4>
+                    <p class="text-3xl font-black">Male: 170cm</p>
+                    <p class="text-base opacity-90 mt-2">Female: 157cm</p>
+                </div>
+                <div class="bg-slate-800 text-white p-8 rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                    <h4 class="font-bold text-slate-400 uppercase text-xs tracking-[0.2em] mb-2">Chest (Male)</h4>
+                    <p class="text-3xl font-black">80 - 85 cm</p>
+                    <p class="text-base opacity-90 mt-2">Min 5cm expansion</p>
+                </div>
+                <div class="bg-slate-800 text-white p-8 rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                    <h4 class="font-bold text-slate-400 uppercase text-xs tracking-[0.2em] mb-2">Running</h4>
+                    <p class="text-3xl font-black">5 KM Run</p>
+                    <p class="text-base opacity-90 mt-2">Within 24 Minutes</p>
+                </div>
+                <div class="bg-slate-800 text-white p-8 rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                    <h4 class="font-bold text-slate-400 uppercase text-xs tracking-[0.2em] mb-2">Long Jump</h4>
+                    <p class="text-3xl font-black">11 Feet</p>
+                    <p class="text-base opacity-90 mt-2">Standard (3 Chances)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preparation Guidance -->
+        <section id="preparation" class="grid lg:grid-cols-2 gap-10">
+            <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-200">
+                <h3 class="text-2xl font-black mb-8 flex items-center gap-3">
+                    <i data-lucide="brain" class="text-blue-700"></i> Written Strategy
+                </h3>
+                <ul class="space-y-6 text-slate-700">
+                    <li class="flex items-start gap-4">
+                        <i data-lucide="check-circle-2" class="w-6 h-6 text-green-500 flex-shrink-0"></i>
+                        <span class="font-medium">Prioritize Reasoning, GA, Maths, and Hindi/English.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i data-lucide="check-circle-2" class="w-6 h-6 text-green-500 flex-shrink-0"></i>
+                        <span class="font-medium">Solve one Previous Year Question Paper daily.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i data-lucide="check-circle-2" class="w-6 h-6 text-green-500 flex-shrink-0"></i>
+                        <span class="font-medium">Follow a consistent 6-8 hour rigorous study routine.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-200">
+                <h3 class="text-2xl font-black mb-8 flex items-center gap-3">
+                    <i data-lucide="timer" class="text-blue-700"></i> Daily Schedule
+                </h3>
+                <ul class="space-y-6 text-slate-700">
+                    <li class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-2 rounded-lg"><i data-lucide="clock" class="w-5 h-5 text-blue-700"></i></div>
+                        <div>
+                            <p class="font-black text-slate-900">04:30 AM</p>
+                            <p class="text-slate-600">Wake up, Hydrate & Mental Prep</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-2 rounded-lg"><i data-lucide="clock" class="w-5 h-5 text-blue-700"></i></div>
+                        <div>
+                            <p class="font-black text-slate-900">05:00 AM</p>
+                            <p class="text-slate-600">Physical Training: 5km Run & Exercises</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-2 rounded-lg"><i data-lucide="clock" class="w-5 h-5 text-blue-700"></i></div>
+                        <div>
+                            <p class="font-black text-slate-900">07:30 AM</p>
+                            <p class="text-slate-600">High Protein Breakfast & Start Study Session</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CTA / Contact -->
+        <section id="contact" class="text-center bg-white py-16 px-6 rounded-[3rem] shadow-2xl border border-slate-100">
+            <h2 class="text-4xl font-black mb-4 text-slate-800">Join Our Community</h2>
+            <p class="text-slate-600 mb-12 max-w-2xl mx-auto text-lg">
+                Get real-time updates on deadlines, physical trial dates, and premium study materials.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+                <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 transition-all hover:scale-105">
+                    <i data-lucide="message-circle"></i> WhatsApp Group
+                </button>
+                <button class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 transition-all hover:scale-105">
+                    <i data-lucide="send"></i> Telegram Channel
+                </button>
+                <button class="bg-slate-900 hover:bg-black text-white px-6 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 transition-all hover:scale-105 border-b-4 border-slate-700">
+                    <i data-lucide="monitor"></i> Online Course
+                </button>
+                <button class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 transition-all hover:scale-105 border-b-4 border-amber-700">
+                    <i data-lucide="map-pin"></i> Offline Batch
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-white pt-20 pb-10 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 mb-16">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <i data-lucide="shield" class="text-blue-400 w-8 h-8"></i>
+                    <h4 class="font-black text-2xl tracking-tight">Force Guidance</h4>
+                </div>
+                <p class="text-slate-400 leading-relaxed">
+                    The #1 platform for young aspirants aiming for CAPF, Police, and Para-military roles. We provide end-to-end guidance from written exams to physical medicals.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-xl mb-6 text-white border-l-4 border-blue-500 pl-3">Important Links</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="https://ssc.gov.in" target="_blank" class="hover:text-blue-400 transition-colors">Staff Selection Commission</a></li>
+                    <li><a href="https://upsc.gov.in" target="_blank" class="hover:text-blue-400 transition-colors">UPSC (Assistant Commandant)</a></li>
+                    <li><a href="https://mha.gov.in" target="_blank" class="hover:text-blue-400 transition-colors">Ministry of Home Affairs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-xl mb-6 text-white border-l-4 border-blue-500 pl-3">Office Info</h4>
+                <div class="space-y-4 text-slate-400">
+                    <p class="flex items-center gap-2"><i data-lucide="mail" class="w-5 h-5"></i> info@forceguidance.com</p>
+                    <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-5 h-5"></i> Mukherjee Nagar, New Delhi</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-8 border-t border-slate-800">
+            <p class="text-slate-500 text-sm">&copy; 2024 Force Recruitment Guidance Portal. Dedicated to the Bravehearts.</p>
+            <p class="mt-4 font-black text-slate-400 italic text-lg tracking-[0.3em]">JAI HIND</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Smooth scroll implementation with offset for sticky header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const navHeight = document.querySelector('.sticky-nav').offsetHeight;
+                    window.scrollTo({
+                        top: target.offsetTop - navHeight - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

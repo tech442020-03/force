@@ -8,7 +8,7 @@
         :root {
             --primary-color: #0f172a; /* Deep Navy Blue */
             --secondary-color: #166534; /* Olive Green */
-            --accent-color: #dc2626; /* Alert Red */
+            --accent-color: #16a34a; /* Action Green */
             --bg-color: #f8fafc;
             --text-color: #334155;
             --card-bg: #ffffff;
@@ -91,18 +91,17 @@
             padding: 4rem 5%;
         }
 
+        /* FIXED: Perfect Centering for all Section Titles */
         .section-title {
             text-align: center;
             font-size: 2rem;
             color: var(--primary-color);
-            margin-bottom: 3rem;
+            margin: 0 auto 3rem auto; /* Centers the heading itself */
             text-transform: uppercase;
             border-bottom: 3px solid var(--secondary-color);
-            display: inline-block;
+            display: block;
+            width: fit-content; /* Ensures border only spans the text width */
             padding-bottom: 0.5rem;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
         }
 
         /* Grid Layout for Cards */
@@ -180,6 +179,7 @@
             border: 2px dashed var(--secondary-color);
         }
 
+        /* Buttons changed to Green */
         .btn-large {
             display: inline-flex;
             align-items: center;
@@ -193,21 +193,20 @@
             border-radius: 5px;
             margin-top: 1.5rem;
             transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+            box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4); 
             cursor: pointer;
             border: none;
         }
 
         .btn-large:hover {
-            background-color: #b91c1c;
+            background-color: #15803d; 
             transform: scale(1.05);
         }
 
-        /* MODIFIED: Document List now completely centered */
         .doc-list {
             display: none;
             margin-top: 2rem;
-            text-align: center; /* Centered all text */
+            text-align: center; 
             background: white;
             padding: 1.5rem;
             border-radius: 8px;
@@ -218,15 +217,14 @@
             display: block;
         }
 
-        /* MODIFIED: Document items are now stacked and centered */
         .doc-item {
             display: flex;
-            flex-direction: column; /* Stack item info and button */
-            align-items: center;    /* Center horizontally */
+            flex-direction: column; 
+            align-items: center;    
             justify-content: center;
             padding: 1.5rem 1rem;
             border-bottom: 1px solid #e2e8f0;
-            gap: 12px; /* Space between text and button */
+            gap: 12px; 
         }
 
         .doc-item:last-child {
